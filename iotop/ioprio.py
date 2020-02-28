@@ -27,6 +27,7 @@ import platform
 # 'x86_64' but it will use the i386 syscall number, that's why we consider both
 # the architecture name and the word size.
 IOPRIO_GET_ARCH_SYSCALL = [
+    ('aarch64',     '*',   31),
     ('alpha',       '*',  443),
     ('arm*',        '*',  315),
     ('i*86',        '*',  290),
@@ -41,6 +42,7 @@ IOPRIO_GET_ARCH_SYSCALL = [
 ]
 
 IOPRIO_SET_ARCH_SYSCALL = [
+    ('aarch64',     '*',   30),
     ('alpha',       '*',  442),
     ('arm*',        '*',  314),
     ('i*86',        '*',  289),
